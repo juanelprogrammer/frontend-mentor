@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+}
+
+
+body {
+    background-color: var(--paleblue);
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--darkblue)
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.card {
+    width: 340px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+}
+
+
+.card p {
+    font-size: 16px;
+    color: hsla(223, 47%, 23%, 0.664);
+    margin: 1.2rem 1rem;
+}
+
+.card main {
+    padding: 1.2rem;
+    text-align: center;
+    color: var(--darkblue)
+}
+
+.card .plans {
+    background-color: var(--verypaleblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 20px;
+}
+
+.plans small {
+    color: hsla(223, 47%, 23%, 0.664);
+}
+
+.card .plans section {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2rem;
+}
+
+button {
+    cursor: pointer;
+    padding: 1.5rem;
+    border-style: none;
+    border-radius: 20px;
+    margin: 0.2rem 0;
+    font-weight: 700;
+    color: hsla(223, 47%, 23%, 0.664);
+    font-size: 16px;
+}
+
+button:first-child {
+    color: white;
+    background-color: var(--brightblue);
+}

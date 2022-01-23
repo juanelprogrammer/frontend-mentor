@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.card p {
+    color: var(--transparent-white-p);
+    margin-bottom: 1rem;
+}
+
+
+.sedans {
+    background-color: var(--bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+.container {
+    /* max-width: 70%; */
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    align-items: center; */
+    height: 100vh;
+    margin: 2rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    color: var(--very-light-gray);
+    margin: 1.5rem 0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+
+.card {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 2.5rem;
+}
+
+.header {
+    margin: 1rem 0 0 0;
+}
+
+.text {
+    text-align: left;
+    line-height: 1.7;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 30px;
+    padding: 1rem 2.5rem;
+    border-style: none;
+    margin-top: 1rem;
+    text-transform: capitalize;
+}
+
+button:hover {
+    /* border: 2px solid var(--transparent-white-p); */
+    transition: .3s;
+    outline: 2px solid var(--transparent-white-p);
+    background: none;
+    color: white !important;
+}
+
+.sedans button {
+    color: var(--bright-orange)
+}
+
+.suvs button {
+    color: var(--dark-cyan)
+}
+
+.luxury button {
+    color: var(--very-dark-cyan)
+}
+
+
+@media only screen and (max-width: 375px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+}

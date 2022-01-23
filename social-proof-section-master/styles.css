@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+}
+
+body {
+   font-size: 15px;
+   font-family: 'Spartan', sans-serif;
+   color: var(--darkGrayishMagenta);
+
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.content {
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 4rem 1rem;
+}
+
+.header {
+    text-align: center;
+
+}
+
+.header h1 {
+    color: var(--veryDarkMagenta);
+    padding: 0 1rem;
+}
+
+.header p {
+    font-weight: 500;
+    /* padding: 0 1rem; */
+    line-height: 1.5;
+    margin: 1rem 0 2.5rem 0;
+}
+
+.stars div{
+    background-color: var(--lightGrayishMagenta);
+    padding: 1rem;
+    margin: 1rem 0;
+    color: var(--veryDarkMagenta);
+    font-weight: 700;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.stars p {
+    margin-top: 10px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stars {
+    margin-bottom: 2rem;
+}
+
+
+.reviews .card {
+    background-color: var(--veryDarkMagenta);
+    padding: 3rem 2rem 2rem 2rem;
+    color: white;
+    margin: 1rem 0;
+    border-radius: 10px;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 2rem;
+}
+
+.card-header img {
+    border-radius: 50%;
+    margin-right: 1.75rem;
+    width: 50px;
+}
+
+.card-header .title p {
+    margin-top: 0.2rem;
+    color:var(--softPink);
+
+}
+
+.card-header h2 {
+    font-size: 15px;
+}
+
+.card-text p {
+    line-height: 1.5;
+    color: var(--lightGrayishMagenta);
+
+}
+
+
+@media only screen and (min-width: 375px) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid red;
+        /* padding: 0; */
+    }
+
+    .header{
+        border: 1px solid red;
+        display: flex;
+    }
+    .header h1 {
+        padding: 0;
+        border: 1px solid red;
+        margin-right: 300px;
+    }
+    
+    .header p {
+        padding-right: 140px;
+    }
+
+    .text {
+        max-width: 50%;
+        text-align: start;
+    }
+
+    .reviews {
+        display: flex;
+        gap: 1rem;
+    }
+    .container {
+        margin: 2rem 4rem;
+    }
+
+    .stars {
+        border: 1px solid red;
+        width: 100%;
+        /* padding-left: 4rem; */
+    }
+    
+   .stars div {
+       display: flex;
+       flex-direction: row;
+       max-width: 500px;
+       justify-content: flex-start;
+   }
+
+    .stars div:nth-child(2) {
+        margin-left: 2rem;
+    }
+}
